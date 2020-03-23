@@ -38,3 +38,11 @@ def test_add_string_and_number():
     """
     result = calc.add2('abc', '5.5')
     assert result == 'abc5.5'
+
+def test_add_numbers_spaces():
+    """
+    Test the addition of a string and a float returns them as one
+    concatenated string (in which the float is converted to a string)
+    """
+    result = calc.add2('  4  ', '     1    ')
+    assert result == 5
